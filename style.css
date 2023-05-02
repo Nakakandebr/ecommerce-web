@@ -5,11 +5,9 @@
      margin-left: 20%;
      padding-right: 560px;
 }
-.hero{
-    display:flex;
-background-color: blueviolet;
-border: solid blueviolet;
-
+.girl{
+  
+ width: 100vw; 
 
 
 }
@@ -48,24 +46,22 @@ font-size: 17px;
 
 }
  .girltwo{ 
-width: 20%;
-margin-top: 1%;
-height:74vh;
+
 
 
 }
 .girlthree{
     width: 20%;
     margin-left: 28%;
-    margin-top: -38%;
-    height:74vh;
+    margin-top: -28%; 
+  
 
 }
 .girlfour{
     width: 20%;
     margin-left: 52%;
     margin-top: -38%;
-    height:74vh;
+   
 
 
 
@@ -74,15 +70,10 @@ height:74vh;
     width: 20%;
     margin-left: 78%;
     margin-top: -38%;
-    height:78vh;
-
-
-
-
+   
 }
 #fi {
-margin-top: -2%;
-
+margin-top: -1%;
 
 }
 #fii{
@@ -179,3 +170,114 @@ margin-left:40%;
     width: 10%;
   }
 
+  
+  @media screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+    .navbar ul {
+        display: none;
+    }
+    .navbar ul a:first-child {
+        display: block;
+    }
+    .navbar ul a {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid black;
+        margin-bottom: 5px;
+    }
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+    .selection {
+        text-align: center;
+    }
+    .firstimages div {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .firstimages div img {
+        width: 100%;
+        height: auto;
+    }
+    #fi, #fii, #fiii, #fiiii {
+        text-align: center;
+    }
+    .outfits {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .outfits div {
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+    }
+    .navbar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar ul a:first-child {
+        display: none;
+    }
+    .navbar ul a {
+        display: block;
+        text-align: center;
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+    .selection {
+        text-align: center;
+    }
+    .firstimages div {
+        width: 25%;
+        margin: 0;
+    }
+    .firstimages div img {
+        width: 100%;
+        height: auto;
+    }
+    #fi, #fii, #fiii, #fiiii {
+        text-align: center;
+    }
+    .outfits {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .outfits div {
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .navbar ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .navbar ul a:first-child {
+        display: block;
+    }
+    .navbar ul a {
+        display: block;
+        text-align: center;
+        border-bottom: none;
+        margin-left: 30px;
+    }
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+}
